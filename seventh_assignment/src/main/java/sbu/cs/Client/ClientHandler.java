@@ -43,6 +43,7 @@ public class ClientHandler implements Runnable {
         catch (IOException e) {
             throw new RuntimeException(e);
         }
+        System.out.println(name + "connected");
         try {
             //menu();
             this.out.writeUTF("1-Join the chat");
